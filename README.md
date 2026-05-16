@@ -1,4 +1,4 @@
-# 🌪️ Data Storm 7.0: Preliminary Round
+# Data Storm 7.0: Preliminary Round
 **Team:** VisionAI (Chamika Uduwaka & Ishinika Jayarathna)
 
 ## 📌 Project Overview
