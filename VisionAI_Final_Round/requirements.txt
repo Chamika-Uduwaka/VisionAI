@@ -1,0 +1,7 @@
+streamlit>=1.20.0
+pandas>=2.0
+pydeck>=0.8
+google-genai>=0.1.0
+pypdf>=3.12
+folium>=0.14
+streamlit-folium>=0.11
