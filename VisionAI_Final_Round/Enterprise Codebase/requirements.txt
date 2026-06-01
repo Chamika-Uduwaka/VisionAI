@@ -1,0 +1,8 @@
+pandas
+polars
+geopandas
+osmnx
+shapely
+numpy
+pulp
+streamlit
