@@ -2,6 +2,12 @@
 
 Streamlit dashboard for outlet-level predictions, filtering, outlet drilldown reasoning, and Western Province budget optimization.
 
+## ⚠️ Important Notes for Evaluators
+
+* **UI Theme:** Please ensure your Streamlit interface is set to **Light Mode** (Settings > Theme > Light). The dashboard was specifically engineered for a clean, white-themed executive workspace, and dark mode will invert the custom charts.
+* **GenAI Explanations:** When testing the "Generate Business Explanation" feature on the Outlet Drilldown page, please ensure you have configured your own Gemini API key (instructions below) to guarantee unrestricted access and full results. If the AI generation hangs on the first execution, simply **refresh the page** and try again.
+
+
 ## Run locally
 
 ```powershell
