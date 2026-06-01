@@ -314,14 +314,9 @@ def generate_xai_explanation(outlet_data, api_key):
 
 def apply_filters(df):
     with st.sidebar:
-        st.markdown("### Studio Controls")
-        st.caption('The Gemini key is loaded server-side. No API key field is shown to users.')
 
         api_status = 'Connected' if get_llm_api_key() else 'Not configured'
         st.markdown(f'<span class="soft-chip">Gemini: {api_status}</span>', unsafe_allow_html=True)
-        st.markdown(f'<span class="soft-chip alt">White-theme executive view</span>', unsafe_allow_html=True)
-
-        st.markdown('---')
         st.markdown('### Filters')
 
         provinces = sorted([province for province in df['Province'].dropna().unique().tolist() if province != 'Unknown'])
@@ -379,10 +374,10 @@ def render_hero(filtered_df):
         f"""
         <div class="hero-shell">
             <div class="soft-chip">Data Storm 7.0</div>
-            <div class="soft-chip alt">Decision support for non-technical business users</div>
+            <div class="soft-chip alt">Decision support for business users</div>
             <h1 style="margin: 0.6rem 0 0.35rem 0; font-size: 2.1rem; line-height: 1.08; color: #0f172a;">Outlet Intelligence & Optimization Engine</h1>
             <p style="margin: 0; color: #475569; font-size: 1rem; max-width: 900px;">
-                A clean white executive workspace for exploring outlet potential, trade spend allocation, and AI-generated commercial reasoning.
+                An executive workspace for exploring outlet potential, trade spend allocation, and AI-generated commercial reasoning.
             </p>
         </div>
         """,
